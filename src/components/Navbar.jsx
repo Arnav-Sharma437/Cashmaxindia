@@ -61,13 +61,13 @@ export default function Navbar() {
         }`}
       >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-[110px]">
+        <div className="flex justify-between items-center h-[90px]">
           {/* Logo Section (SVG logo inside /public/) */}
           <Link href="/" className="flex items-center flex-shrink-0" onClick={() => setIsOpen(false)}>
             <img
               src="/logo.png"
               alt="Cashmax Finserve Logo"
-              className="h-[100px] w-auto object-contain"
+              className="h-[80px] w-auto object-contain"
             />
           </Link>
 

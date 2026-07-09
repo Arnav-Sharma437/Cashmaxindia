@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           
           {/* Main Layout Area */}
-          <main className="flex-grow pt-[110px]">
+          <main className="flex-grow pt-[90px]">
             {children}
           </main>
           
