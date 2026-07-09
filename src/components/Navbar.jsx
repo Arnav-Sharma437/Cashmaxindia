@@ -65,7 +65,7 @@ export default function Navbar() {
           {/* Logo Section (SVG logo inside /public/) */}
           <Link href="/" className="flex items-center flex-shrink-0" onClick={() => setIsOpen(false)}>
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="Cashmax Finserve Logo"
               className="h-12 w-auto object-contain"
             />

@@ -30,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/logo.svg", // Using logo as og:image
+        url: "/logo.png", // Using logo as og:image
         width: 320,
         height: 80,
         alt: "Cashmax Finserve Logo",

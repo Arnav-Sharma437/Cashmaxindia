@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="space-y-6">
             <Link href="/">
               <img
-                src="/logo-white.svg"
+                src="/logo.png"
                 alt="Cashmax Finserve Logo"
                 className="h-14 w-auto object-contain"
               />
