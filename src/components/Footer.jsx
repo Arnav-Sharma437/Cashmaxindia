@@ -23,7 +23,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Cashmax Finserve Logo"
-                className="h-14 w-auto object-contain"
+                className="h-20 sm:h-26 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
