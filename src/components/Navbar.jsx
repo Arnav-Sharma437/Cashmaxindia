@@ -23,6 +23,18 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   const loanProducts = [
     { name: "Business Loan", path: "/business-loan" },
     { name: "Personal Loan", path: "/personal-loan" },
@@ -156,13 +168,13 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       <div
-        className={`lg:hidden fixed inset-0 z-40 bg-brand-neutralDark/40 backdrop-blur-sm transition-opacity duration-300 ${
+        className={`lg:hidden fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
           isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setIsOpen(false)}
       >
         <div
-          className={`fixed top-0 right-0 w-64 max-w-xs h-full bg-white shadow-xl flex flex-col p-6 transition-transform duration-300 ease-in-out transform ${
+          className={`fixed top-0 right-0 w-72 max-w-[80vw] h-full bg-white shadow-2xl flex flex-col p-6 transition-transform duration-300 ease-in-out transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
           onClick={(e) => e.stopPropagation()}
