@@ -3,17 +3,17 @@
   <g transform="translate(10, 5)">
     <!-- House outline -->
     <path d="M25 5 L45 22 L45 45 C45 47 43 49 41 49 L9 49 C7 49 5 47 5 45 L5 22 Z" fill="#FFFFFF" />
-    <!-- Roof shadow/details -->
-    <path d="M25 3 L48 22 L44 24 L25 8 L6 24 L2 22 Z" fill="#F5A623" />
-    <!-- Rupee symbol cutout (Navy) -->
-    <path d="M20 20 L30 20 M20 25 L28 25 M20 20 C25 20 27 21 27 24 C27 27 24 28 20 28 L30 38 M20 28 L23 28" stroke="#0E4DA4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- Roof shadow/details (Green #0E6B36) -->
+    <path d="M25 3 L48 22 L44 24 L25 8 L6 24 L2 22 Z" fill="#0E6B36" />
+    <!-- Rupee symbol cutout (Navy #2B3F6C) -->
+    <path d="M20 20 L30 20 M20 25 L28 25 M20 20 C25 20 27 21 27 24 C27 27 24 28 20 28 L30 38 M20 28 L23 28" stroke="#2B3F6C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
   </g>
 
   <!-- Wordmark -->
   <g transform="translate(70, 0)">
     <!-- CASHMAX (Bold, Condensed, White) -->
     <text x="0" y="32" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="0.5">CASHMAX</text>
-    <!-- FINSERVE (Thin, Letter-spaced, Gold) -->
-    <text x="2" y="49" font-family="'Inter', 'Arial', sans-serif" font-weight="400" font-size="12" fill="#D4AF37" letter-spacing="7.5">FINSERVE</text>
+    <!-- FINSERVE (Thin, Letter-spaced, Green #0E6B36) -->
+    <text x="2" y="49" font-family="'Inter', 'Arial', sans-serif" font-weight="400" font-size="12" fill="#0E6B36" letter-spacing="7.5">FINSERVE</text>
   </g>
 </svg>

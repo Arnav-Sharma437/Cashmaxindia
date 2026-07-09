@@ -58,16 +58,16 @@ export default function About() {
   return (
     <>
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-brand-primary to-brand-secondary text-white pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center relative">
+      <section className="bg-brand-neutralLight text-brand-neutralDark pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center relative border-b border-gray-150">
         <div className="max-w-4xl mx-auto space-y-4">
-          <span className="text-brand-accent font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
+          <span className="text-brand-primary font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
             Who We Are
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-brand-primary">
             Empowering Your Financial Future
           </h1>
-          <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-medium">
-            Cashmax Finserve is India's leading loan facilitation platform, connecting borrowers with the nation's most trusted banks and NBFCs.
+          <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto font-medium">
+            Cashmax Finserve is India's leading loan sourcing referral partner, connecting borrowers with the nation's most trusted banks and NBFCs.
           </p>
         </div>
       </section>
@@ -236,7 +236,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-brand-accent hover:bg-brand-secondary hover:text-white text-brand-neutralDark font-extrabold px-8 py-4 rounded-full shadow-lg text-center"
+              className="w-full sm:w-auto bg-brand-accent hover:bg-brand-secondary hover:text-white text-white font-bold px-8 py-4 rounded-full shadow-lg text-center"
             >
               Check My Eligibility
             </Link>

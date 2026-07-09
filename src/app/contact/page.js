@@ -393,11 +393,11 @@ function ContactForm() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-brand-accent hover:bg-yellow-500 disabled:bg-gray-200 text-brand-neutralDark font-bold py-3.5 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5 disabled:translate-y-0 disabled:shadow-none"
+                  className="w-full bg-brand-accent hover:bg-brand-secondary disabled:bg-gray-200 text-white font-bold py-3.5 rounded-lg shadow-md hover:shadow-lg flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5 disabled:translate-y-0 disabled:shadow-none"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
-                    <span className="w-5 h-5 border-2 border-brand-neutralDark border-t-transparent rounded-full animate-spin"></span>
+                    <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
                   ) : (
                     <>
                       <span>Submit Application</span>
@@ -416,7 +416,7 @@ function ContactForm() {
 
           {/* Embedded Google Maps Placeholder */}
           <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-md bg-white">
-            <div className="bg-brand-neutralDark p-4 text-white font-bold text-xs tracking-wider uppercase flex items-center">
+            <div className="bg-brand-primary p-4 text-white font-bold text-xs tracking-wider uppercase flex items-center">
               <MapPin className="w-4 h-4 text-brand-accent mr-2" />
               Office Location Map
             </div>

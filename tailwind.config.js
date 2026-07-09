@@ -9,9 +9,9 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          primary: '#0E4DA4',      // Deep royal blue
-          secondary: '#0A3A80',    // Navy (hover/dark)
-          accent: '#D4AF37',       // Gold/amber
+          primary: '#2B3F6C',      // New navy blue
+          secondary: '#203156',    // Navy hover
+          accent: '#0E6B36',       // Green accent
           neutralDark: '#1A1A2E',  // Dark navy/charcoal for text
           neutralLight: '#F5F7FA', // Light grey for sections
         }

@@ -18,15 +18,15 @@ export default function LoanPage({ service }) {
   return (
     <div className="bg-white">
       {/* Hero Banner */}
-      <section className="bg-gradient-to-r from-brand-primary to-brand-secondary text-white pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center relative">
+      <section className="bg-brand-neutralLight text-brand-neutralDark pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center relative border-b border-gray-150">
         <div className="max-w-4xl mx-auto space-y-4">
-          <span className="text-brand-accent font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
+          <span className="text-brand-primary font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
             Cashmax Sourcing
           </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-brand-primary">
             {service.title}
           </h1>
-          <p className="text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-medium">
+          <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto font-medium">
             {tagline}
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function LoanPage({ service }) {
               <div className="space-y-4">
                 <Link
                   href={`/contact?product=${service.slug}`}
-                  className="block w-full text-center bg-brand-accent hover:bg-yellow-500 text-brand-neutralDark font-extrabold py-3.5 rounded-xl shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
+                  className="block w-full text-center bg-brand-accent hover:bg-brand-secondary text-white font-extrabold py-3.5 rounded-xl shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
                 >
                   Apply Online Now
                 </Link>
@@ -132,18 +132,18 @@ export default function LoanPage({ service }) {
       </section>
 
       {/* Trust banner */}
-      <section className="bg-brand-neutralDark text-white py-16 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+      <section className="bg-brand-primary text-white py-16 px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="text-3xl font-extrabold tracking-tight">
             Get Multiple Bank Options under One Application
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto font-medium">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto font-medium">
             No need to visit multiple offices. Our credit advisors analyze your files to match you with top lending NBFCs.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link
               href={`/contact?product=${service.slug}`}
-              className="w-full sm:w-auto bg-brand-accent hover:bg-yellow-500 text-brand-neutralDark font-extrabold px-8 py-4 rounded-full shadow-lg"
+              className="w-full sm:w-auto bg-brand-accent hover:bg-brand-secondary text-white font-extrabold px-8 py-4 rounded-full shadow-lg"
             >
               Get Free Assessment
             </Link>

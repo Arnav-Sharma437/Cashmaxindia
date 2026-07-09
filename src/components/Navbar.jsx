@@ -135,7 +135,7 @@ export default function Navbar() {
             </a>
             <Link
               href="/contact"
-              className="bg-brand-accent hover:bg-brand-secondary hover:text-white text-brand-neutralDark font-bold px-6 py-2.5 rounded-full shadow-md transition-all duration-200"
+              className="bg-brand-accent hover:bg-brand-secondary text-white font-bold px-6 py-2.5 rounded-full shadow-md transition-all duration-200"
             >
               Apply Now
             </Link>
@@ -247,7 +247,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="block text-center w-full bg-brand-accent hover:bg-brand-secondary hover:text-white text-brand-neutralDark font-bold py-3 rounded-full shadow-md"
+              className="block text-center w-full bg-brand-accent hover:bg-brand-secondary text-white font-bold py-3 rounded-full shadow-md"
             >
               Apply Now
             </Link>

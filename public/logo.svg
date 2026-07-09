@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="100%" height="100%">
   <!-- Icon (House + Rupee symbol) -->
   <g transform="translate(10, 5)">
-    <!-- House outline -->
-    <path d="M25 5 L45 22 L45 45 C45 47 43 49 41 49 L9 49 C7 49 5 47 5 45 L5 22 Z" fill="#0E4DA4" />
-    <!-- Roof shadow/details -->
-    <path d="M25 3 L48 22 L44 24 L25 8 L6 24 L2 22 Z" fill="#0A3A80" />
+    <!-- House outline (Navy Blue #2B3F6C) -->
+    <path d="M25 5 L45 22 L45 45 C45 47 43 49 41 49 L9 49 C7 49 5 47 5 45 L5 22 Z" fill="#2B3F6C" />
+    <!-- Roof shadow/details (Navy Hover #203156) -->
+    <path d="M25 3 L48 22 L44 24 L25 8 L6 24 L2 22 Z" fill="#203156" />
     <!-- Rupee symbol cut out inside the house -->
     <path d="M20 20 L30 20 M20 25 L28 25 M20 20 C25 20 27 21 27 24 C27 27 24 28 20 28 L30 38 M20 28 L23 28" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
   </g>
 
   <!-- Wordmark -->
   <g transform="translate(70, 0)">
-    <!-- CASHMAX (Bold, Condensed, Deep Navy) -->
-    <text x="0" y="32" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#0A3A80" letter-spacing="0.5">CASHMAX</text>
-    <!-- FINSERVE (Thin, Letter-spaced, Gold) -->
-    <text x="2" y="49" font-family="'Inter', 'Arial', sans-serif" font-weight="400" font-size="12" fill="#D4AF37" letter-spacing="7.5">FINSERVE</text>
+    <!-- CASHMAX (Bold, Condensed, Navy Blue #2B3F6C) -->
+    <text x="0" y="32" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#2B3F6C" letter-spacing="0.5">CASHMAX</text>
+    <!-- FINSERVE (Thin, Letter-spaced, Green #0E6B36) -->
+    <text x="2" y="49" font-family="'Inter', 'Arial', sans-serif" font-weight="400" font-size="12" fill="#0E6B36" letter-spacing="7.5">FINSERVE</text>
   </g>
 </svg>

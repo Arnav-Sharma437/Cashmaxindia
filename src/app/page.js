@@ -150,9 +150,9 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-primary via-[#0B3A80] to-brand-neutralDark text-white pt-24 pb-20 lg:pt-32 lg:pb-28 px-4 sm:px-6 lg:px-8">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-primary/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+      <section className="relative overflow-hidden bg-brand-neutralLight text-brand-neutralDark pt-24 pb-20 lg:pt-32 lg:pb-28 px-4 sm:px-6 lg:px-8">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-primary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Hero Left */}
@@ -161,17 +161,17 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide"
+              className="inline-flex items-center space-x-2 bg-brand-primary/10 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold text-brand-primary tracking-wide"
             >
-              <CheckCircle className="w-4 h-4 text-brand-accent animate-pulse" />
-              <span>India's Leading Loan Sourcing referral Partner</span>
+              <CheckSquare className="w-4 h-4 text-brand-accent animate-pulse" />
+              <span>India's Leading Loan Sourcing Referral Partner</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-brand-primary tracking-tight"
             >
               Fast, Hassle-Free Loans <br />
               <span className="text-brand-accent">Tailored For You</span>
@@ -181,7 +181,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-gray-200 max-w-2xl mx-auto lg:mx-0 font-medium"
+              className="text-lg text-gray-500 max-w-2xl mx-auto lg:mx-0 font-medium"
             >
               Compare and apply for top loan products with leading banks and NBFCs. Enjoy 100% digital documentation, transparent terms, and rapid disbursal.
             </motion.p>
@@ -194,7 +194,7 @@ export default function Home() {
             >
               <Link
                 href="/contact"
-                className="w-full sm:w-auto bg-brand-accent hover:bg-white border-2 border-brand-accent hover:border-white hover:text-brand-neutralDark text-brand-neutralDark font-extrabold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all text-center flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto bg-brand-accent hover:bg-brand-secondary text-white border-2 border-brand-accent hover:border-brand-secondary font-extrabold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all text-center flex items-center justify-center space-x-2"
               >
                 <span>Apply Now</span>
                 <ArrowRight className="w-5 h-5" />
@@ -203,7 +203,7 @@ export default function Home() {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-white border-2 border-white/60 hover:border-white font-bold px-8 py-3.5 rounded-full transition-all text-center flex items-center justify-center space-x-2"
+                className="w-full sm:w-auto bg-transparent hover:bg-brand-primary/5 text-brand-primary border-2 border-brand-primary/60 hover:border-brand-primary font-bold px-8 py-3.5 rounded-full transition-all text-center flex items-center justify-center space-x-2"
               >
                 <Phone className="w-4 h-4 text-[#25D366]" />
                 <span>WhatsApp Us</span>
@@ -218,34 +218,34 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:col-span-5 relative hidden lg:block"
           >
-            <div className="bg-white/10 backdrop-blur-md border border-white/15 p-6 rounded-2xl shadow-2xl relative overflow-hidden">
-              <div className="flex justify-between items-center mb-6 border-b border-white/10 pb-4">
-                <span className="font-bold text-sm tracking-wide">DIGITAL DISBURSAL TRACKER</span>
-                <span className="bg-green-500/20 text-green-400 text-xs px-2.5 py-0.5 rounded-full font-bold">LIVE</span>
+            <div className="bg-white border border-gray-200/80 p-6 rounded-2xl shadow-xl relative overflow-hidden">
+              <div className="flex justify-between items-center mb-6 border-b border-gray-150 pb-4">
+                <span className="font-bold text-xs text-brand-primary tracking-wide">DIGITAL DISBURSAL TRACKER</span>
+                <span className="bg-brand-accent/20 text-brand-accent text-xs px-2.5 py-0.5 rounded-full font-bold">LIVE</span>
               </div>
               <div className="space-y-4">
-                <div className="flex justify-between items-center bg-white/5 p-3 rounded-lg">
+                <div className="flex justify-between items-center bg-brand-neutralLight p-3 rounded-lg">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent font-bold text-xs">₹</div>
                     <div>
-                      <p className="text-xs text-gray-300 font-semibold">Business Loan Approval</p>
-                      <p className="text-sm font-bold">Verma Exports (Noida)</p>
+                      <p className="text-xs text-gray-400 font-semibold">Business Loan Approval</p>
+                      <p className="text-sm font-bold text-brand-neutralDark">Verma Exports (Noida)</p>
                     </div>
                   </div>
-                  <span className="text-xs text-green-400 font-bold">₹45 Lakhs Approved</span>
+                  <span className="text-xs text-brand-accent font-bold">₹45 Lakhs Approved</span>
                 </div>
-                <div className="flex justify-between items-center bg-white/5 p-3 rounded-lg">
+                <div className="flex justify-between items-center bg-brand-neutralLight p-3 rounded-lg">
                   <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs">H</div>
+                    <div className="w-8 h-8 rounded-full bg-brand-primary/20 flex items-center justify-center text-brand-primary font-bold text-xs">H</div>
                     <div>
-                      <p className="text-xs text-gray-300 font-semibold">Home Loan Eligible</p>
-                      <p className="text-sm font-bold">Amit K. (Delhi)</p>
+                      <p className="text-xs text-gray-400 font-semibold">Home Loan Eligible</p>
+                      <p className="text-sm font-bold text-brand-neutralDark">Amit K. (Delhi)</p>
                     </div>
                   </div>
-                  <span className="text-xs text-green-400 font-bold">₹75 Lakhs Approved</span>
+                  <span className="text-xs text-brand-accent font-bold">₹75 Lakhs Approved</span>
                 </div>
               </div>
-              <div className="mt-6 pt-4 border-t border-white/10 flex justify-between text-xs text-gray-300">
+              <div className="mt-6 pt-4 border-t border-gray-150 flex justify-between text-xs text-gray-400">
                 <span>Facilitated Disbursals today:</span>
                 <span className="font-bold text-brand-accent">₹2.4 Cr+</span>
               </div>
@@ -387,31 +387,31 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-brand-neutralDark text-white px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-brand-neutralLight text-brand-neutralDark px-4 sm:px-6 lg:px-8 border-y border-gray-150">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Why Left */}
           <div className="lg:col-span-5 space-y-6">
-            <span className="text-brand-accent font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
+            <span className="text-brand-primary font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
               Why Choose Cashmax
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-primary leading-tight">
               Redefining Loan Processing in India
             </h2>
-            <p className="text-gray-300 text-sm leading-relaxed font-medium">
+            <p className="text-gray-500 text-sm leading-relaxed font-medium">
               We understand that timing is everything when seeking credit. That's why we bypassed old bureaucratic hurdles to bring you custom, rate-competitive loans backed by industry experts.
             </p>
             <div className="space-y-4 pt-2">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-brand-accent flex-shrink-0" />
-                <span className="text-sm font-semibold text-gray-200">No Hidden Costs or Brokerages</span>
+                <span className="text-sm font-semibold text-brand-neutralDark/80">No Hidden Costs or Brokerages</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-brand-accent flex-shrink-0" />
-                <span className="text-sm font-semibold text-gray-200">Partnership with 25+ Lead Banks &amp; NBFCs</span>
+                <span className="text-sm font-semibold text-brand-neutralDark/80">Partnership with 25+ Lead Banks &amp; NBFCs</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-brand-accent flex-shrink-0" />
-                <span className="text-sm font-semibold text-gray-200">Highest Approval Ratios in the Market</span>
+                <span className="text-sm font-semibold text-brand-neutralDark/80">Highest Approval Ratios in the Market</span>
               </div>
             </div>
           </div>
@@ -419,12 +419,12 @@ export default function Home() {
           {/* Why Right */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {benefits.map((benefit, idx) => (
-              <div key={idx} className="bg-white/5 border border-white/10 p-6 rounded-xl space-y-4">
-                <div className="w-10 h-10 rounded-lg bg-brand-accent/20 flex items-center justify-center text-brand-accent">
+              <div key={idx} className="bg-white border border-gray-200/60 p-6 rounded-xl space-y-4 shadow-sm">
+                <div className="w-10 h-10 rounded-lg bg-brand-accent/15 flex items-center justify-center text-brand-accent">
                   <benefit.icon className="w-5 h-5" />
                 </div>
-                <h3 className="text-lg font-bold text-white">{benefit.title}</h3>
-                <p className="text-gray-300 text-xs leading-relaxed font-medium">{benefit.desc}</p>
+                <h3 className="text-lg font-bold text-brand-primary">{benefit.title}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed font-medium">{benefit.desc}</p>
               </div>
             ))}
           </div>
@@ -500,7 +500,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-brand-accent hover:bg-white border-2 border-brand-accent hover:border-white hover:text-brand-neutralDark text-brand-neutralDark font-extrabold px-8 py-4 rounded-full shadow-lg text-center flex items-center justify-center space-x-2 transition-all duration-200"
+              className="w-full sm:w-auto bg-brand-accent hover:bg-brand-secondary text-white border-2 border-brand-accent hover:border-brand-secondary font-extrabold px-8 py-4 rounded-full shadow-lg text-center flex items-center justify-center space-x-2 transition-all duration-200"
             >
               <span>Apply Online Now</span>
               <ArrowRight className="w-5 h-5" />

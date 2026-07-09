@@ -213,7 +213,7 @@ export default function EMICalculator() {
                 cy="60"
                 r={radius}
                 fill="transparent"
-                stroke="#0E4DA4"
+                stroke="#2B3F6C"
                 strokeWidth={strokeWidth}
               />
               {/* Foreground arc (Interest Component) */}
@@ -222,7 +222,7 @@ export default function EMICalculator() {
                 cy="60"
                 r={radius}
                 fill="transparent"
-                stroke="#F5A623"
+                stroke="#0E6B36"
                 strokeWidth={strokeWidth}
                 strokeDasharray={circumference}
                 strokeDashoffset={interestStrokeOffset}
@@ -256,7 +256,7 @@ export default function EMICalculator() {
             {/* Interest Legend */}
             <div className="flex justify-between items-center text-sm border-b border-gray-200/50 pb-2">
               <div className="flex items-center">
-                <span className="w-3.5 h-3.5 rounded-full bg-[#F5A623] mr-2.5"></span>
+                <span className="w-3.5 h-3.5 rounded-full bg-[#0E6B36] mr-2.5"></span>
                 <span className="text-gray-500 font-medium">Total Interest</span>
               </div>
               <span className="font-bold text-brand-neutralDark">
