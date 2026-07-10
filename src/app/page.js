@@ -13,7 +13,7 @@ import EMICalculator from "@/components/EMICalculator";
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
-  const whatsappUrl = "https://wa.me/919876543210?text=Hi%20Cashmax%20Finserve,%20I%27m%20interested%20in%20checking%20my%20loan%20eligibility.";
+  const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Cashmax%20Finserve,%20I%27m%20interested%20in%20checking%20my%20loan%20eligibility.";
 
   const loanProducts = [
     {

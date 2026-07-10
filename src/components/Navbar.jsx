@@ -140,11 +140,11 @@ export default function Navbar() {
           {/* Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="tel:+919876543210"
+              href="tel:+919911956789"
               className="flex items-center text-sm font-semibold text-brand-primary hover:text-brand-secondary transition-colors"
             >
               <PhoneCall className="w-4 h-4 mr-2" />
-              <span>+91 98765 43210</span>
+              <span>+91 99119 56789</span>
             </a>
             <Link
               href="/contact"
@@ -252,11 +252,11 @@ export default function Navbar() {
 
           <div className="border-t border-gray-100 pt-6 mt-6 space-y-4">
             <a
-              href="tel:+919876543210"
+              href="tel:+919911956789"
               className="flex items-center text-sm font-semibold text-brand-primary justify-center"
             >
               <PhoneCall className="w-4 h-4 mr-2" />
-              <span>+91 98765 43210</span>
+              <span>+91 99119 56789</span>
             </a>
             <Link
               href="/contact"

@@ -122,11 +122,11 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-300">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-brand-accent mr-3 mt-0.5 flex-shrink-0" />
-                <span>102, Royal Plaza, Sector 18, Noida, Uttar Pradesh, India - 201301</span>
+                <span>602, Kirti Mahal Tower, Rajendra Place, New Delhi, India</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-brand-accent mr-3 flex-shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-white transition-colors">+91 98765 43210</a>
+                <a href="tel:+919911956789" className="hover:text-white transition-colors">+91 99119 56789</a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-brand-accent mr-3 flex-shrink-0" />

@@ -102,7 +102,7 @@ function ContactForm() {
     }
   };
 
-  const whatsappUrl = "https://wa.me/919876543210?text=Hi%20Cashmax%20Finserve,%20I%20want%20to%20apply%20for%20a%20loan.%20Please%20guide%20me.";
+  const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Cashmax%20Finserve,%20I%20want%20to%20apply%20for%20a%20loan.%20Please%20guide%20me.";
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -126,8 +126,8 @@ function ContactForm() {
               <div>
                 <h4 className="font-bold text-brand-neutralDark text-sm sm:text-base">Office Address</h4>
                 <p className="text-gray-400 text-xs sm:text-sm font-semibold mt-1 leading-relaxed">
-                  102, Royal Plaza, Sector 18, Noida, <br />
-                  Uttar Pradesh, India - 201301
+                  602, Kirti Mahal Tower, Rajendra Place, <br />
+                  New Delhi, India
                 </p>
               </div>
             </div>
@@ -139,8 +139,8 @@ function ContactForm() {
               </div>
               <div>
                 <h4 className="font-bold text-brand-neutralDark text-sm sm:text-base">Phone Assistance</h4>
-                <a href="tel:+919876543210" className="text-gray-400 text-xs sm:text-sm font-semibold mt-1 hover:text-brand-primary block">
-                  +91 98765 43210
+                <a href="tel:+919911956789" className="text-gray-400 text-xs sm:text-sm font-semibold mt-1 hover:text-brand-primary block">
+                  +91 99119 56789
                 </a>
               </div>
             </div>

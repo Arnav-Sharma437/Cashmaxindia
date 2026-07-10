@@ -96,7 +96,7 @@ export default function LoanPage({ service }) {
                   Apply Online Now
                 </Link>
                 <a
-                  href={`https://wa.me/919876543210?text=Hi%20Cashmax,%20I%20am%20interested%20in%20checking%20my%20eligibility%20for%20a%20${encodeURIComponent(service.title)}.`}
+                  href={`https://wa.me/919911956789?text=Hi%20Cashmax,%20I%20am%20interested%20in%20checking%20my%20eligibility%20for%20a%20${encodeURIComponent(service.title)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-transparent border-2 border-brand-primary/30 hover:border-brand-primary hover:bg-brand-primary/5 text-brand-primary font-bold py-3 rounded-xl transition-all"
