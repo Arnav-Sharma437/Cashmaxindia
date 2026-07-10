@@ -1,8 +1,6 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
+import ClientLayout from "@/components/ClientLayout";
 import AuthWrapper from "@/components/AuthWrapper";
 
 const inter = Inter({
@@ -44,19 +42,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body className="antialiased font-body bg-white text-brand-neutralDark min-h-screen flex flex-col">
         <AuthWrapper>
-          {/* Navigation Bar */}
-          <Navbar />
-          
-          {/* Main Layout Area */}
-          <main className="flex-grow pt-[90px]">
-            {children}
-          </main>
-          
-          {/* Footer Component */}
-          <Footer />
-          
-          {/* Sticky WhatsApp Floating Button */}
-          <WhatsAppFloat />
+          <ClientLayout>{children}</ClientLayout>
         </AuthWrapper>
       </body>
     </html>

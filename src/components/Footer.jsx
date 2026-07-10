@@ -92,12 +92,7 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link href="/admin" className="text-gray-300 hover:text-white transition-colors flex items-center group">
-                  <ArrowUpRight className="w-3.5 h-3.5 mr-1.5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  Admin Panel
-                </Link>
-              </li>
+
             </ul>
           </div>
 
