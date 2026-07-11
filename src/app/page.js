@@ -9,9 +9,11 @@ import {
   Building, Car, Coins, CheckSquare, Clock, FileText, Phone, Factory
 } from "lucide-react";
 import EMICalculator from "@/components/EMICalculator";
+import StarRating from "@/components/StarRating";
 
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Cashmax%20Finserve,%20I%27m%20interested%20in%20checking%20my%20loan%20eligibility.";
 
@@ -294,32 +296,47 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {loanProducts.map((product) => (
-            <motion.div
-              key={product.id}
-              whileHover={{ y: -6, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
-              className="bg-white p-8 rounded-2xl shadow-md border border-gray-100 flex flex-col justify-between transition-shadow duration-300"
-            >
-              <div>
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${product.color}`}>
-                  <product.icon className="w-6 h-6" />
+        <div className="relative overflow-hidden w-full py-6 select-none">
+          {/* Faded edges gradients for clean transition */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+          <div
+            className="flex space-x-6 animate-marquee-cards"
+            style={{ animationPlayState: isPaused ? "paused" : "running" }}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+            onTouchStart={() => setIsPaused(true)}
+            onTouchEnd={() => setIsPaused(false)}
+          >
+            {[...loanProducts, ...loanProducts].map((product, idx) => (
+              <motion.div
+                key={`${product.id}-${idx}`}
+                whileHover={{ y: -6, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
+                className="bg-white p-8 rounded-2xl shadow-md border border-gray-100 flex flex-col justify-between transition-shadow duration-300 w-[290px] sm:w-[350px] flex-shrink-0"
+              >
+                <div>
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${product.color}`}>
+                    <product.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-brand-neutralDark mb-2">{product.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed mb-6 h-[72px] overflow-hidden line-clamp-3">
+                    {product.desc}
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold text-brand-neutralDark mb-2">{product.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed mb-6">{product.desc}</p>
-              </div>
-              <div className="border-t border-gray-100 pt-5 flex items-center justify-between">
-                <span className="text-sm font-bold text-brand-primary">{product.rate}</span>
-                <Link
-                  href={product.path}
-                  className="text-brand-primary hover:text-brand-secondary font-bold text-sm flex items-center space-x-1"
-                >
-                  <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </motion.div>
-          ))}
+                <div className="border-t border-gray-100 pt-5 flex items-center justify-between">
+                  <span className="text-sm font-bold text-brand-primary">{product.rate}</span>
+                  <Link
+                    href={product.path}
+                    className="text-brand-primary hover:text-brand-secondary font-bold text-sm flex items-center space-x-1"
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -460,11 +477,7 @@ export default function Home() {
                   {testimonials[currentTestimonial].role}
                 </p>
               </div>
-              <div className="flex space-x-1 text-brand-accent">
-                {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                  <span key={i} className="text-lg">&#9733;</span>
-                ))}
-              </div>
+              <StarRating rating={testimonials[currentTestimonial].rating} />
             </div>
           </div>
 

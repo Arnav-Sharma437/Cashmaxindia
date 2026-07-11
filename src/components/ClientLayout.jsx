@@ -12,7 +12,7 @@ export default function ClientLayout({ children }) {
   return (
     <>
       {!isAdmin && <Navbar />}
-      <main className={`flex-grow ${isAdmin ? "" : "pt-[90px]"}`}>
+      <main className={`flex-grow ${isAdmin ? "" : "pt-[115px]"}`}>
         {children}
       </main>
       {!isAdmin && <Footer />}

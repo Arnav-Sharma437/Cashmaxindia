@@ -56,20 +56,32 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-md py-3"
-            : "bg-white py-4 shadow-sm"
+            ? "bg-white/95 backdrop-blur-md shadow-md"
+            : "bg-white shadow-sm"
         }`}
       >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-[90px]">
-          {/* Logo Section (SVG logo inside /public/) */}
-          <Link href="/" className="flex items-center flex-shrink-0" onClick={() => setIsOpen(false)}>
-            <img
-              src="/logo.png"
-              alt="Cashmax Finserve Logo"
-              className="h-[80px] w-auto object-contain"
-            />
-          </Link>
+        {/* Continuous Marquee Disclaimer Bar */}
+        <div className="bg-brand-primary text-white py-1.5 sm:py-2 overflow-hidden relative z-50 text-[10px] sm:text-xs font-semibold tracking-wide border-b border-white/5 select-none">
+          <div className="flex animate-marquee whitespace-nowrap">
+            <span className="px-4">
+              IMPORTANT DISCLAIMER: We are not a direct lender and do not offer loans through any mobile app. Cashmax is a financial consultancy that facilitates loans through leading banks and NBFCs, helping clients find the best financing solutions for their needs.
+            </span>
+            <span className="px-4">
+              IMPORTANT DISCLAIMER: We are not a direct lender and do not offer loans through any mobile app. Cashmax is a financial consultancy that facilitates loans through leading banks and NBFCs, helping clients find the best financing solutions for their needs.
+            </span>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-[75px]">
+            {/* Logo Section (SVG logo inside /public/) */}
+            <Link href="/" className="flex items-center flex-shrink-0" onClick={() => setIsOpen(false)}>
+              <img
+                src="/logo.png"
+                alt="Cashmax Finserve Logo"
+                className="h-[65px] sm:h-[70px] w-auto object-contain"
+              />
+            </Link>
 
           {/* Desktop Nav Links */}
           <div className="hidden lg:flex items-center space-x-6">
