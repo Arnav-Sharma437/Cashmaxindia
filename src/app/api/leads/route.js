@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getDb } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import nodemailer from "nodemailer";
 
 // POST: Lead Submission (Public)
 export async function POST(req) {
@@ -39,6 +40,74 @@ export async function POST(req) {
       status: "new", // default status
       createdAt: new Date()
     });
+
+    // Send Email Notification in try/catch to ensure database write is not blocked on failure
+    try {
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: parseInt(process.env.SMTP_PORT || "465", 10),
+        secure: true, // true since port is 465
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
+
+      const emailHtml = `
+        <h3>New Lead captured on Cashmax Finserve</h3>
+        <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; font-family: sans-serif; font-size: 14px;">
+          <tr style="background-color: #f2f2f2;">
+            <th align="left">Field</th>
+            <th align="left">Value</th>
+          </tr>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>${name}</td>
+          </tr>
+          <tr>
+            <td><strong>Company Name</strong></td>
+            <td>${companyName || "N/A"}</td>
+          </tr>
+          <tr>
+            <td><strong>Profession</strong></td>
+            <td>${profession}</td>
+          </tr>
+          <tr>
+            <td><strong>City</strong></td>
+            <td>${city}</td>
+          </tr>
+          <tr>
+            <td><strong>Loan Product</strong></td>
+            <td>${loanProduct}</td>
+          </tr>
+          <tr>
+            <td><strong>Annual ITR/Salary</strong></td>
+            <td>${annualIncome || "Not Specified"}</td>
+          </tr>
+          <tr>
+            <td><strong>Loan Amount</strong></td>
+            <td>₹${loanAmount}</td>
+          </tr>
+          <tr>
+            <td><strong>Mobile No</strong></td>
+            <td>${mobile}</td>
+          </tr>
+          <tr>
+            <td><strong>Lead ID</strong></td>
+            <td>${result.insertedId}</td>
+          </tr>
+        </table>
+      `;
+
+      await transporter.sendMail({
+        to: process.env.NOTIFY_EMAIL,
+        from: process.env.SMTP_USER,
+        subject: "New Lead — Cashmax Finserve",
+        html: emailHtml,
+      });
+    } catch (emailError) {
+      console.error("Nodemailer Email Notification Error:", emailError);
+    }
 
     return NextResponse.json({
       status: "success",
