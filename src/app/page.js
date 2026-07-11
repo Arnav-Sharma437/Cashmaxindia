@@ -465,10 +465,13 @@ export default function Home() {
         {/* Carousel */}
         <div className="relative max-w-4xl mx-auto bg-brand-neutralLight border border-gray-200/60 p-8 sm:p-12 rounded-2xl shadow-inner">
           <div className="min-h-[160px] flex flex-col justify-between">
-            <p className="text-brand-neutralDark/90 text-base sm:text-lg italic leading-relaxed font-medium">
-              "{testimonials[currentTestimonial].quote}"
-            </p>
-            <div className="mt-8 flex justify-between items-center">
+            <div className="space-y-4">
+              <StarRating rating={testimonials[currentTestimonial].rating} />
+              <p className="text-brand-neutralDark/90 text-base sm:text-lg italic leading-relaxed font-medium">
+                "{testimonials[currentTestimonial].quote}"
+              </p>
+            </div>
+            <div className="mt-8 flex justify-between items-center pr-28">
               <div>
                 <h4 className="font-bold text-brand-primary text-base sm:text-lg">
                   {testimonials[currentTestimonial].name}
@@ -477,7 +480,6 @@ export default function Home() {
                   {testimonials[currentTestimonial].role}
                 </p>
               </div>
-              <StarRating rating={testimonials[currentTestimonial].rating} />
             </div>
           </div>
 
