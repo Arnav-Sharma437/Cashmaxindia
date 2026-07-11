@@ -23,8 +23,7 @@ export default function Home() {
       title: "Business Loan",
       desc: "Expand operations, purchase stock, or scale up your enterprise.",
       rate: "Starting 12.00%*",
-      icon: Briefcase,
-      color: "bg-emerald-50 text-emerald-600",
+      image: "/images/business-loan.jpg",
       path: "/business-loan"
     },
     {
@@ -32,8 +31,7 @@ export default function Home() {
       title: "Personal Loan",
       desc: "Instant cash for weddings, travel, emergencies, or medical bills.",
       rate: "Starting 10.49%*",
-      icon: User,
-      color: "bg-purple-50 text-purple-600",
+      image: "/images/personal-loan.jpg",
       path: "/personal-loan"
     },
     {
@@ -41,8 +39,7 @@ export default function Home() {
       title: "Home Loan & LAP",
       desc: "Buy your dream home or unlock property value with long tenures.",
       rate: "Starting 8.40%*",
-      icon: HomeIcon,
-      color: "bg-blue-50 text-blue-600",
+      image: "/images/home-loan-lap.jpg",
       path: "/home-loan-lap"
     },
     {
@@ -50,8 +47,7 @@ export default function Home() {
       title: "Machinery Finance",
       desc: "Finance new or pre-owned machines & heavy clinic equipment.",
       rate: "Starting 11.50%*",
-      icon: Factory,
-      color: "bg-indigo-50 text-indigo-600",
+      image: "/images/machinery-finance.jpg",
       path: "/machinery-finance"
     },
     {
@@ -59,8 +55,7 @@ export default function Home() {
       title: "Working Capital",
       desc: "Get flexible cash credit, overdraft lines & trade finance limits.",
       rate: "Starting 10.99%*",
-      icon: Coins,
-      color: "bg-yellow-50 text-yellow-600",
+      image: "/images/working-capital.jpg",
       path: "/working-capital"
     },
   ];
@@ -313,14 +308,18 @@ export default function Home() {
               <motion.div
                 key={`${product.id}-${idx}`}
                 whileHover={{ y: -6, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
-                className="bg-white p-8 rounded-2xl shadow-md border border-gray-100 flex flex-col justify-between transition-shadow duration-300 w-[290px] sm:w-[350px] flex-shrink-0"
+                className="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex flex-col justify-between transition-shadow duration-300 w-[290px] sm:w-[350px] flex-shrink-0"
               >
                 <div>
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 ${product.color}`}>
-                    <product.icon className="w-6 h-6" />
+                  <div className="w-full h-40 relative rounded-xl overflow-hidden mb-6">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-brand-neutralDark mb-2">{product.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-6 h-[72px] overflow-hidden line-clamp-3">
+                  <p className="text-gray-500 text-sm leading-relaxed mb-6 h-[72px] overflow-hidden line-clamp-3 font-medium">
                     {product.desc}
                   </p>
                 </div>
