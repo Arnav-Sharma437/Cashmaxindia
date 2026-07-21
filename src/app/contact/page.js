@@ -126,8 +126,8 @@ function ContactForm() {
               <div>
                 <h4 className="font-bold text-brand-neutralDark text-sm sm:text-base">Office Address</h4>
                 <p className="text-gray-400 text-xs sm:text-sm font-semibold mt-1 leading-relaxed">
-                  602, Kirti Mahal Tower, Rajendra Place, <br />
-                  New Delhi, India
+                  11/108, Third Floor, Subhash Nagar, <br />
+                  Near Suraya Hotel, Rajouri Garden, Delhi - 110027
                 </p>
               </div>
             </div>

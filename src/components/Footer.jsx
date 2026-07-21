@@ -117,7 +117,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-300">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-brand-accent mr-3 mt-0.5 flex-shrink-0" />
-                <span>602, Kirti Mahal Tower, Rajendra Place, New Delhi, India</span>
+                <span>11/108, Third Floor, Subhash Nagar, Near Suraya Hotel, Rajouri Garden, Delhi - 110027</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-brand-accent mr-3 flex-shrink-0" />
