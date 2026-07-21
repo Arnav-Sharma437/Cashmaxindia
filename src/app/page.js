@@ -15,7 +15,7 @@ export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Cashmax%20Finserve,%20I%27m%20interested%20in%20checking%20my%20loan%20eligibility.";
+  const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Credmax%20Finserve,%20I%27m%20interested%20in%20checking%20my%20loan%20eligibility.";
 
   const loanProducts = [
     {
@@ -114,19 +114,19 @@ export default function Home() {
     {
       name: "Rajesh Kumar",
       role: "SME Business Owner, Delhi",
-      quote: "Getting a business loan through Cashmax Finserve was incredibly smooth. They matched me with an NBFC offering 1.5% lower rate than my existing bank. Highly recommended!",
+      quote: "Getting a business loan through Credmax Finserve was incredibly smooth. They matched me with an NBFC offering 1.5% lower rate than my existing bank. Highly recommended!",
       rating: 5,
     },
     {
       name: "Sneha Sharma",
       role: "Software Engineer, Bangalore",
-      quote: "I was looking for a home loan, and being a first-time buyer I had tons of doubts. The Cashmax advisor explained everything patiently and handled the paperwork. Got disbursed in 7 days!",
+      quote: "I was looking for a home loan, and being a first-time buyer I had tons of doubts. The Credmax advisor explained everything patiently and handled the paperwork. Got disbursed in 7 days!",
       rating: 5,
     },
     {
       name: "Amit Patel",
       role: "Salaried Professional, Mumbai",
-      quote: "Cashmax got my personal loan approved in less than 4 hours during an emergency. The process was entirely digital, online verification took 15 mins. Exceptional service!",
+      quote: "Credmax got my personal loan approved in less than 4 hours during an emergency. The process was entirely digital, online verification took 15 mins. Exceptional service!",
       rating: 5,
     },
     {
@@ -408,7 +408,7 @@ export default function Home() {
           {/* Why Left */}
           <div className="lg:col-span-5 space-y-6">
             <span className="text-brand-primary font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
-              Why Choose Cashmax
+              Why Choose Credmax
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-primary leading-tight">
               Redefining Loan Processing in India

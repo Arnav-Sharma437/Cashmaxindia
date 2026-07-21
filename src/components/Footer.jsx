@@ -22,7 +22,7 @@ export default function Footer() {
             <Link href="/">
               <img
                 src="/logo.png"
-                alt="Cashmax Finserve Logo"
+                alt="Credmax Finserve Logo"
                 className="h-[80px] w-auto object-contain"
               />
             </Link>
@@ -125,7 +125,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-brand-accent mr-3 flex-shrink-0" />
-                <a href="mailto:info@cashmaxindia.in" className="hover:text-white transition-colors">info@cashmaxindia.in</a>
+                <a href="mailto:info@credmaxindia.in" className="hover:text-white transition-colors">info@credmaxindia.in</a>
               </li>
             </ul>
           </div>
@@ -136,10 +136,10 @@ export default function Footer() {
         <div className="pt-8 text-center text-xs text-gray-400 space-y-4">
           <p className="max-w-4xl mx-auto leading-relaxed border-b border-white/5 pb-6">
             <span className="font-semibold text-gray-300 uppercase block mb-1">Disclaimer</span>
-            Cashmax Finserve is a loan facilitation platform and a referral partner to leading banks and RBI-registered NBFCs. We do not directly disburse loans or offer banking services. Loans are approved and disbursed at the sole discretion of our partner banks/NBFCs and are subject to documentation, eligibility checks, and terms and conditions. Interest rates and charges displayed are indicative and represent market rates which can change without notice.
+            Credmax Finserve is a loan facilitation platform and a referral partner to leading banks and RBI-registered NBFCs. We do not directly disburse loans or offer banking services. Loans are approved and disbursed at the sole discretion of our partner banks/NBFCs and are subject to documentation, eligibility checks, and terms and conditions. Interest rates and charges displayed are indicative and represent market rates which can change without notice.
           </p>
           <div className="flex flex-col sm:flex-row justify-between items-center text-gray-400">
-            <p>&copy; {currentYear} Cashmax Finserve. All Rights Reserved.</p>
+            <p>&copy; {currentYear} Credmax Finserve. All Rights Reserved.</p>
             <div className="flex space-x-6 mt-4 sm:mt-0">
               <Link href="/contact" className="hover:text-white transition-colors">Terms of Use</Link>
               <Link href="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>

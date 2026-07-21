@@ -65,7 +65,7 @@ export default function AdminLogin() {
           </div>
           <h2 className="text-2xl font-extrabold text-brand-neutralDark">Admin Portal Login</h2>
           <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider">
-            Cashmax Finserve Administrator
+            Credmax Finserve Administrator
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export default function AdminLogin() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@cashmaxindia.in"
+                placeholder="admin@credmaxindia.in"
                 className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary text-sm transition-all"
                 disabled={loading}
               />

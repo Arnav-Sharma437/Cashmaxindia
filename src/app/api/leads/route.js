@@ -54,7 +54,7 @@ export async function POST(req) {
       });
 
       const emailHtml = `
-        <h3>New Lead captured on Cashmax Finserve</h3>
+        <h3>New Lead captured on Credmax Finserve</h3>
         <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; font-family: sans-serif; font-size: 14px;">
           <tr style="background-color: #f2f2f2;">
             <th align="left">Field</th>
@@ -102,7 +102,7 @@ export async function POST(req) {
       await transporter.sendMail({
         to: process.env.NOTIFY_EMAIL,
         from: process.env.SMTP_USER,
-        subject: "New Lead — Cashmax Finserve",
+        subject: "New Lead — Credmax Finserve",
         html: emailHtml,
       });
     } catch (emailError) {

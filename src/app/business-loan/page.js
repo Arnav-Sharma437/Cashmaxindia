@@ -8,8 +8,8 @@ export async function generateMetadata() {
   const db = await getDb();
   const service = await db.collection("services").findOne({ slug: "business-loan" });
   return {
-    title: service ? `${service.title} | Cashmax Finserve` : "Business Loan",
-    description: service ? service.description : "Affordable Business Loans at Cashmax Finserve.",
+    title: service ? `${service.title} | Credmax Finserve` : "Business Loan",
+    description: service ? service.description : "Affordable Business Loans at Credmax Finserve.",
   };
 }
 

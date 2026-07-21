@@ -16,14 +16,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Cashmax Finserve | Fast Personal, Home & Business Loans in India",
-  description: "Get fast and easy loan solutions with Cashmax Finserve. 100% digital process, starting from 8.40% interest. Apply now for Home, Personal, LAP, or Business loans.",
-  metadataBase: new URL("https://cashmaxindia.in"),
+  title: "Credmax Finserve | Fast Personal, Home & Business Loans in India",
+  description: "Get fast and easy loan solutions with Credmax Finserve. 100% digital process, starting from 8.40% interest. Apply now for Home, Personal, LAP, or Business loans.",
+  metadataBase: new URL("https://credmaxindia.in"),
   openGraph: {
-    title: "Cashmax Finserve | Fast Personal, Home & Business Loans in India",
+    title: "Credmax Finserve | Fast Personal, Home & Business Loans in India",
     description: "Compare and apply for top loan products with leading banks and NBFCs. 100% digital documentation and rapid disbursals.",
-    url: "https://cashmaxindia.in",
-    siteName: "Cashmax Finserve",
+    url: "https://credmaxindia.in",
+    siteName: "Credmax Finserve",
     locale: "en_IN",
     type: "website",
     images: [
@@ -31,7 +31,7 @@ export const metadata = {
         url: "/logo.png", // Using logo as og:image
         width: 320,
         height: 80,
-        alt: "Cashmax Finserve Logo",
+        alt: "Credmax Finserve Logo",
       },
     ],
   },

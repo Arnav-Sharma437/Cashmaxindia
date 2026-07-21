@@ -102,7 +102,7 @@ function ContactForm() {
     }
   };
 
-  const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Cashmax%20Finserve,%20I%20want%20to%20apply%20for%20a%20loan.%20Please%20guide%20me.";
+  const whatsappUrl = "https://wa.me/919911956789?text=Hi%20Credmax%20Finserve,%20I%20want%20to%20apply%20for%20a%20loan.%20Please%20guide%20me.";
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -152,8 +152,8 @@ function ContactForm() {
               </div>
               <div>
                 <h4 className="font-bold text-brand-neutralDark text-sm sm:text-base">Support Email</h4>
-                <a href="mailto:info@cashmaxindia.in" className="text-gray-400 text-xs sm:text-sm font-semibold mt-1 hover:text-brand-primary block">
-                  info@cashmaxindia.in
+                <a href="mailto:info@credmaxindia.in" className="text-gray-400 text-xs sm:text-sm font-semibold mt-1 hover:text-brand-primary block">
+                  info@credmaxindia.in
                 </a>
               </div>
             </div>
@@ -422,7 +422,7 @@ function ContactForm() {
             </div>
             <div className="w-full h-[300px] bg-brand-neutralLight relative">
               <iframe
-                title="Cashmax Finserve Office Location"
+                title="Credmax Finserve Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.5807954002613!2d77.32420957630236!3d28.582352875691068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!1d1136!2d77.3255!3d28.5825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"

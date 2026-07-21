@@ -11,8 +11,8 @@
 
   <!-- Wordmark -->
   <g transform="translate(70, 0)">
-    <!-- CASHMAX (Bold, Condensed, White) -->
-    <text x="0" y="32" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="0.5">CASHMAX</text>
+    <!-- CREDMAX (Bold, Condensed, White) -->
+    <text x="0" y="32" font-family="'Poppins', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" letter-spacing="0.5">CREDMAX</text>
     <!-- FINSERVE (Thin, Letter-spaced, Green #0E6B36) -->
     <text x="2" y="49" font-family="'Inter', 'Arial', sans-serif" font-weight="400" font-size="12" fill="#0E6B36" letter-spacing="7.5">FINSERVE</text>
   </g>

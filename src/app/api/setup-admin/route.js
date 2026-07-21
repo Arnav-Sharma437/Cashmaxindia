@@ -7,14 +7,14 @@ export async function GET() {
     const db = await getDb();
     
     // 1. Seed Admin User
-    const adminEmail = "admin@cashmaxindia.in";
+    const adminEmail = "admin@credmaxindia.in";
     const existingAdmin = await db.collection("users").findOne({ email: adminEmail });
     
     let adminCreated = false;
     if (!existingAdmin) {
-      const hashedPassword = await bcrypt.hash("Admin@Cashmax2026", 10);
+      const hashedPassword = await bcrypt.hash("Admin@Credmax2026", 10);
       await db.collection("users").insertOne({
-        name: "Cashmax Admin",
+        name: "Credmax Admin",
         email: adminEmail,
         password: hashedPassword,
         role: "admin",
@@ -161,13 +161,38 @@ export async function GET() {
       }
     }
 
+    // 3. Migrate any existing services stored in DB from Cashmax to Credmax
+    const allServices = await db.collection("services").find({}).toArray();
+    let servicesMigrated = 0;
+    for (const serviceDoc of allServices) {
+      let updated = false;
+      let newDesc = serviceDoc.description;
+      let newTitle = serviceDoc.title;
+      if (newDesc && (newDesc.includes("Cashmax") || newDesc.includes("CASHMAX"))) {
+        newDesc = newDesc.replaceAll("Cashmax", "Credmax").replaceAll("CASHMAX", "CREDMAX");
+        updated = true;
+      }
+      if (newTitle && (newTitle.includes("Cashmax") || newTitle.includes("CASHMAX"))) {
+        newTitle = newTitle.replaceAll("Cashmax", "Credmax").replaceAll("CASHMAX", "CREDMAX");
+        updated = true;
+      }
+      if (updated) {
+        await db.collection("services").updateOne(
+          { _id: serviceDoc._id },
+          { $set: { description: newDesc, title: newTitle, updatedAt: new Date() } }
+        );
+        servicesMigrated++;
+      }
+    }
+
     return NextResponse.json({
       status: "success",
-      message: "Database seeding sequence completed.",
+      message: "Database seeding and migration sequence completed.",
       details: {
         adminCreated,
         adminUser: adminCreated ? adminEmail : "Already exists",
-        servicesSeeded
+        servicesSeeded,
+        servicesMigrated
       }
     });
 

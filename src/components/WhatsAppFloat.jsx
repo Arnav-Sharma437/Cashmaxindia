@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function WhatsAppFloat() {
   const phoneNumber = "919911956789";
   const message = encodeURIComponent(
-    "Hi Cashmax Finserve, I am interested in applying for a loan. Please share details."
+    "Hi Credmax Finserve, I am interested in applying for a loan. Please share details."
   );
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

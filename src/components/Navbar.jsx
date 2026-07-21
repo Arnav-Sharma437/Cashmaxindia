@@ -64,10 +64,10 @@ export default function Navbar() {
         <div className="bg-brand-primary text-white py-1.5 sm:py-2 overflow-hidden relative z-50 text-[10px] sm:text-xs font-semibold tracking-wide border-b border-white/5 select-none">
           <div className="flex animate-marquee whitespace-nowrap">
             <span className="px-4">
-              IMPORTANT DISCLAIMER: We are not a direct lender and do not offer loans through any mobile app. Cashmax is a financial consultancy that facilitates loans through leading banks and NBFCs, helping clients find the best financing solutions for their needs.
+              IMPORTANT DISCLAIMER: We are not a direct lender and do not offer loans through any mobile app. Credmax is a financial consultancy that facilitates loans through leading banks and NBFCs, helping clients find the best financing solutions for their needs.
             </span>
             <span className="px-4">
-              IMPORTANT DISCLAIMER: We are not a direct lender and do not offer loans through any mobile app. Cashmax is a financial consultancy that facilitates loans through leading banks and NBFCs, helping clients find the best financing solutions for their needs.
+              IMPORTANT DISCLAIMER: We are not a direct lender and do not offer loans through any mobile app. Credmax is a financial consultancy that facilitates loans through leading banks and NBFCs, helping clients find the best financing solutions for their needs.
             </span>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center flex-shrink-0" onClick={() => setIsOpen(false)}>
               <img
                 src="/logo.png"
-                alt="Cashmax Finserve Logo"
+                alt="Credmax Finserve Logo"
                 className="h-[65px] sm:h-[70px] w-auto object-contain"
               />
             </Link>

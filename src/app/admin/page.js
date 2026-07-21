@@ -258,7 +258,7 @@ export default function AdminDashboard() {
             </div>
             <div>
               <h1 className="text-xl sm:text-2xl font-black text-brand-neutralDark font-heading">
-                Cashmax Finserve Control Room
+                Credmax Finserve Control Room
               </h1>
               <p className="text-xs text-gray-400 font-semibold">
                 Welcome back, {session?.user?.email}

@@ -8,8 +8,8 @@ export async function generateMetadata() {
   const db = await getDb();
   const service = await db.collection("services").findOne({ slug: "machinery-finance" });
   return {
-    title: service ? `${service.title} | Cashmax Finserve` : "Machinery Finance",
-    description: service ? service.description : "Equipment and Machinery Finance at Cashmax Finserve.",
+    title: service ? `${service.title} | Credmax Finserve` : "Machinery Finance",
+    description: service ? service.description : "Equipment and Machinery Finance at Credmax Finserve.",
   };
 }
 

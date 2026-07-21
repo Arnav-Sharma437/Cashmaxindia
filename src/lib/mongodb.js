@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // Helper to quickly retrieve a database instance
-export async function getDb(dbName = "cashmax_db") {
+export async function getDb(dbName = "credmax_db") {
   const connection = await clientPromise;
   return connection.db(dbName);
 }

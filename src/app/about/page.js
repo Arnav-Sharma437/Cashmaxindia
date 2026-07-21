@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Shield, Sparkles, Target, Compass, Award, Users } from "lucide-react";
 
 export const metadata = {
-  title: "About Us | Cashmax Finserve",
-  description: "Learn more about Cashmax Finserve. We are a customer-first financial services facilitation company helping you secure the best loan rates with minimal paperwork.",
+  title: "About Us | Credmax Finserve",
+  description: "Learn more about Credmax Finserve. We are a customer-first financial services facilitation company helping you secure the best loan rates with minimal paperwork.",
 };
 
 export default function About() {
@@ -36,22 +36,22 @@ export default function About() {
     {
       feature: "Interest Rate Comparison",
       bank: "Offers only their standard, non-negotiable bank rates.",
-      cashmax: "Compares 25+ lenders to fetch you the lowest available rate.",
+      credmax: "Compares 25+ lenders to fetch you the lowest available rate.",
     },
     {
       feature: "Documentation Time",
       bank: "Physical forms, sign-offs, and multi-day document validation.",
-      cashmax: "100% Digital soft-copy verification done in hours.",
+      credmax: "100% Digital soft-copy verification done in hours.",
     },
     {
       feature: "Processing & Follow-ups",
       bank: "Customer visits branch repeatedly; slow and tedious communication.",
-      cashmax: "Dedicated relationship manager handles all bank follow-ups for you.",
+      credmax: "Dedicated relationship manager handles all bank follow-ups for you.",
     },
     {
       feature: "Approval Success Rate",
       bank: "Rigid filters; high rejection rate if your profile has minor deviations.",
-      cashmax: "Multiple lender options mean we route your profile to banks most likely to approve.",
+      credmax: "Multiple lender options mean we route your profile to banks most likely to approve.",
     },
   ];
 
@@ -67,7 +67,7 @@ export default function About() {
             Empowering Your Financial Future
           </h1>
           <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto font-medium">
-            Cashmax Finserve is India's leading loan sourcing referral partner, connecting borrowers with the nation's most trusted banks and NBFCs.
+            Credmax Finserve is India's leading loan sourcing referral partner, connecting borrowers with the nation's most trusted banks and NBFCs.
           </p>
         </div>
       </section>
@@ -78,16 +78,16 @@ export default function About() {
           {/* Story Text */}
           <div className="lg:col-span-7 space-y-6">
             <h2 className="text-3xl font-extrabold text-brand-neutralDark">
-              The Cashmax Finserve Story
+              The Credmax Finserve Story
             </h2>
             <p className="text-gray-500 font-medium leading-relaxed">
-              Founded by a team of veteran bankers, Cashmax Finserve emerged from a simple observation: borrowers in India often struggle with confusing interest rates, endless documentation, and rigid approval rules of traditional lenders. We believed the system should be simpler, faster, and customer-first.
+              Founded by a team of veteran bankers, Credmax Finserve emerged from a simple observation: borrowers in India often struggle with confusing interest rates, endless documentation, and rigid approval rules of traditional lenders. We believed the system should be simpler, faster, and customer-first.
             </p>
             <p className="text-gray-500 font-medium leading-relaxed">
               We set out to construct a bridge: a digital facilitation platform that merges state-of-the-art fintech with personal relationship management. We don't just pass your files to a computer program; we evaluate your profile, run calculations, and represent your case to multiple tier-1 banks and RBI-compliant NBFCs to pull down the borrowing rate.
             </p>
             <p className="text-gray-500 font-medium leading-relaxed">
-              Today, Cashmax stands as a symbol of trust and efficiency. We are not a direct lender, which makes us completely objective: our target is simply to align you with the financial product that makes sense for your budget and growth.
+              Today, Credmax stands as a symbol of trust and efficiency. We are not a direct lender, which makes us completely objective: our target is simply to align you with the financial product that makes sense for your budget and growth.
             </p>
           </div>
 
@@ -193,7 +193,7 @@ export default function About() {
               Comparison
             </span>
             <h2 className="text-3xl font-extrabold text-brand-neutralDark mt-4 mb-3">
-              How Cashmax Differs From Banks
+              How Credmax Differs From Banks
             </h2>
             <p className="text-gray-500 font-medium text-sm">
               We leverage partnerships to do the legwork you'd usually do yourself—only more effectively.
@@ -206,7 +206,7 @@ export default function About() {
                 <tr>
                   <th className="px-6 py-4 text-left text-xs sm:text-sm font-bold uppercase tracking-wider">Features</th>
                   <th className="px-6 py-4 text-left text-xs sm:text-sm font-bold uppercase tracking-wider">Traditional Banks</th>
-                  <th className="px-6 py-4 text-left text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-accent">Cashmax Finserve</th>
+                  <th className="px-6 py-4 text-left text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-accent">Credmax Finserve</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 text-xs sm:text-sm font-medium text-gray-500">
@@ -214,7 +214,7 @@ export default function About() {
                   <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                     <td className="px-6 py-4 font-bold text-brand-neutralDark">{item.feature}</td>
                     <td className="px-6 py-4">{item.bank}</td>
-                    <td className="px-6 py-4 font-semibold text-brand-primary bg-brand-primary/5">{item.cashmax}</td>
+                    <td className="px-6 py-4 font-semibold text-brand-primary bg-brand-primary/5">{item.credmax}</td>
                   </tr>
                 ))}
               </tbody>

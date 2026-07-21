@@ -21,7 +21,7 @@ export default function LoanPage({ service }) {
       <section className="bg-brand-neutralLight text-brand-neutralDark pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center relative border-b border-gray-150">
         <div className="max-w-4xl mx-auto space-y-4">
           <span className="text-brand-primary font-bold text-xs uppercase tracking-widest border-b-2 border-brand-accent pb-1">
-            Cashmax Sourcing
+            Credmax Sourcing
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-brand-primary">
             {service.title}
@@ -96,7 +96,7 @@ export default function LoanPage({ service }) {
                   Apply Online Now
                 </Link>
                 <a
-                  href={`https://wa.me/919911956789?text=Hi%20Cashmax,%20I%20am%20interested%20in%20checking%20my%20eligibility%20for%20a%20${encodeURIComponent(service.title)}.`}
+                  href={`https://wa.me/919911956789?text=Hi%20Credmax,%20I%20am%20interested%20in%20checking%20my%20eligibility%20for%20a%20${encodeURIComponent(service.title)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-transparent border-2 border-brand-primary/30 hover:border-brand-primary hover:bg-brand-primary/5 text-brand-primary font-bold py-3 rounded-xl transition-all"
